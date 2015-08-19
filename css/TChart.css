@@ -1,0 +1,51 @@
+text.label{
+    font-size:12px;
+    font-weight:bold;
+    cursor:pointer;
+}
+text.value{
+    font-size:12px;
+    font-weight:bold;
+}
+.xaxis path,
+.xaxis line {
+    fill: none;
+    stroke: #fff;
+    shape-rendering: crispEdges;
+}
+
+.xaxis text{
+    font-family: sans-serif;
+    font-size: 5px;
+    color:#fff;
+}
+.yaxis path,
+.yaxis line {
+    fill: none;
+    stroke: rgba(0, 0, 0, 0);           
+    shape-rendering: crispEdges;
+}
+
+.yaxis text {
+/*            margin-left:-15px;*/
+    font-family: sans-serif;
+    font-size: 11px;
+}
+/*        circle{z-index:4; }*/
+circle:hover{
+    fill:orange;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    -webkit-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+circle span{display: none}
+
+circle:hover span{ /*the span will display just on :hover state*/
+    display:block;
+    position:absolute;
+    top:0.2em; left:2em; width:15em;
+    border:1px solid #0cf;
+    background-color:#cff; color:#000;
+    text-align: center}
